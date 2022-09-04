@@ -1,0 +1,148 @@
+:root{
+    --primary:#35a22c;
+    --white: #fff;
+    --grey: #aaa;
+    --black: #000;
+}
+*{
+    font-family: 'Hind', sans-serif;
+}
+header{
+    height: 100vh;
+}
+
+.navbar {
+    z-index: 100000;
+}
+.app-logo i{
+    color:var(--primary);
+    font-size: 45px;
+}
+.app-logo span{
+    color: var(--white);
+    margin-left: 8px;
+    font-size:34px;
+}
+.nav-toggler-btn{
+    background: var(--primary);
+}
+.nav-toggler-btn span{
+    color: var(--grey);
+}
+.navbar-collapse-custom.show{
+    background: var(white);
+}
+.navbar-collapse-custom.show a{
+    color: var(--primary);
+}
+.navbar-collapse-custom.show li{
+    padding: 0 5px;
+}
+.navbar-collapse-custom.show li:hover{
+    background: var(--primary);
+}
+.navbar-collapse-custom.show li:hover a{
+    color: var(white);
+}
+.navbar-collapse-custom.show li a.active{
+    color: var(--primary) !important;
+}
+/*Desktop*/
+.navbar-collapse-custom a{
+    color: var(--white);
+}
+.navbar-collapse-custom li{
+    position: relative;
+    margin-left: 10px;
+}
+.navbar-collapse-custom li::after{
+    content:"";
+    width: 0;
+    position: absolute;
+    height: 1px;
+    background:var(--primary);
+    transition: 0.5s;
+}
+.navbar-collapse-custom li:hover::after{
+    width:100%;
+}
+.navbar-collapse-custom li:hover a {
+    color: var(--primary);
+}
+.navbar-collapse-custom li:hover a.active {
+    color:var(--primary) !important;
+}
+.navbar-collapse-custom li a.active{
+    color: var(--primary) !important;
+}
+.carousel-item{
+    height: 100vh;
+}
+.overplay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: var(--black);
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+}
+.custom-carousel-indicators button{
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50%;
+    border-top: none !important;
+    border-bottom: none !important;
+}
+.custom-carousel-indicators button.active{
+    background: var(--primary) !important ;
+}
+.custom-carousel-caption{
+    bottom: 50%;
+    transform: translateY(50%);
+}
+#availabel{
+    background-image: url(..//img/3.jpg);
+    position: relative;
+    padding: 100px 0;
+}
+.availabel-content{
+    position: relative;
+    z-index: 300;
+}
+.availabel-item i{
+    color: var(--primary);
+}
+.availabel-item .custom-card{
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+#availabel::before{
+    width: 100%;
+    height: 100%;
+    content:"";
+    position: absolute;
+    background: var(--black);
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    z-index:1;
+}
+.archivement-left{
+    padding: 50px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px;
+}
+.archivement-image{
+    width: 150px;
+}
+.archivement-bg-img{
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    z-index:1;
+}
+.archivement-content{
+    position: relative;
+    z-index: 2;
+}
