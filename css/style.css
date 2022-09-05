@@ -146,10 +146,17 @@ header{
     width: 150px;
 }
 .archivement-bg-img{
-    width: 400px;
-    height: 300px;
-    object-fit: cover;
-    z-index:1;
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
+    z-index:8;
+    background-image: url(../img/memphis_3.png);
+    background-repeat: no-repeat;
+    background-size: 50% auto;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    opacity: 50%;
 }
 .archivement-content{
     position: relative;
@@ -158,6 +165,7 @@ header{
 footer{
     background: black;
     opacity: 85%;
+    z-index: 9;
 }
 footer .container{
     width: 100%;
