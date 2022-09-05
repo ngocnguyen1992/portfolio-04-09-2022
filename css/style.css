@@ -174,19 +174,18 @@ footer .container{
 }
 .footer-item{
     font-size: 24px;
-    padding: 10px;
     display: flex;
     justify-content: center;
-    text-align: center;
+    align-items: center;
 }
 .footer-item i{
-    margin-left: 30px;   
+    margin : 0px 15px ;  
+
 }
 footer .footer-content{
     padding-top: 30px;
     margin-top: 30px;
     border-top: 1px solid #454545;
-    /* margin: 0 auto; */
     text-align: center !important;
 }
 footer .footer-item i{
