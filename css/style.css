@@ -148,14 +148,15 @@ header{
 .archivement-bg-img{
     width: 100%;
     height: 100%;
-    /* object-fit: cover; */
+    object-fit: cover;
     z-index:8;
     background-image: url(../img/memphis_3.png);
     background-repeat: no-repeat;
     background-size: 50% auto;
+    background-position: bottom left;
     position: absolute;
-    bottom: 0%;
-    left: 0%;
+    top: 0;
+    left: 0;
     opacity: 50%;
 }
 .archivement-content{
