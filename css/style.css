@@ -101,6 +101,9 @@ header{
     bottom: 50%;
     transform: translateY(50%);
 }
+.object-cover{
+    object-fit: cover;
+}
 #availabel{
     background-image: url(..//img/3.jpg);
     position: relative;
@@ -128,6 +131,12 @@ header{
     left: 0;
     z-index:1;
 }
+#availabel .row .availabel-item:hover{
+    background: black;
+    border: 1px solid white;
+    border-radius: 10px;
+    transition: 1s;
+}
 .archivement-left{
     padding: 50px;
     border-radius: 5px;
@@ -145,4 +154,44 @@ header{
 .archivement-content{
     position: relative;
     z-index: 2;
+}
+footer{
+    background: black;
+    opacity: 85%;
+}
+footer .container{
+    width: 100%;
+    opacity: 70%;
+}
+.footer-item{
+    font-size: 24px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.footer-item i{
+    margin-left: 30px;   
+}
+footer .footer-content{
+    padding-top: 30px;
+    margin-top: 30px;
+    border-top: 1px solid #454545;
+    /* margin: 0 auto; */
+    text-align: center !important;
+}
+footer .footer-item i{
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    border-radius: 50%;
+    border: 1px solid white;
+    opacity: 60%;
+    transition: 0.5s;
+    cursor: pointer;
+}
+footer .footer-item i:hover{
+    color: var(--primary);
+    border: 1px solid var(--primary);
+    opacity: 80%;
 }
